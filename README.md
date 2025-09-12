@@ -129,4 +129,4 @@ A continuación, se proponen consultas SQL organizadas en distintos niveles de d
 - Documentación oficial de SQLite  
 
 ---
-![Diagrama del flujo de ventas](Imagenes/Residuos.pdf)
+<img src="WhatsApp Image 2025-08-04 at 15.06.38.jpeg" width="400">
