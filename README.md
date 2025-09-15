@@ -110,8 +110,6 @@ A continuación, se proponen consultas SQL organizadas en distintos niveles de d
 - Ranking de clientes: ¿Quiénes son los 10 más valiosos (*highest lifetime value*)?  
 - ¿Qué género prefieren los clientes de USA frente a los de Brasil?  
 - ¿Hay correlación entre duración de las canciones y su precio unitario?  
-- ¿Qué facturas tienen más de 5 canciones distintas?  
-- ¿Qué playlist es la más diversa en cuanto a géneros?  
 
 ---
 
