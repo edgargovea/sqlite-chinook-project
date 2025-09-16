@@ -15,8 +15,8 @@ El proyecto busca:
 2. Practicar **consultas SQL** que resuelvan problemas de análisis de datos.  
 3. Documentar las tablas y sus relaciones.  
 4. Resolver un conjunto de **objetivos/retos analíticos**.
-5. 
-<img src="imagenes_2/Clientes_más_valiosos2.png" width="400"> 
+   
+<img src="imagenes_2/Clientes_más.png" width="400"> 
 ---
 
 ## 📂 Estructura de la Base de Datos Chinook
