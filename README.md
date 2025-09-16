@@ -118,7 +118,7 @@ A continuación, se proponen consultas SQL organizadas en distintos niveles de d
 
 - **SQLite** como motor de base de datos.  
 - **SQL** para consultas.  
-- **Python (opcional):** `sqlite3`, `pandas`, `jupyter` para análisis adicional.  
+- **Python:** `sqlite3`, `pandas`, `jupyter` para análisis adicional.  
 
 ---
 
