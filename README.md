@@ -127,4 +127,5 @@ A continuación, se proponen consultas SQL organizadas en distintos niveles de d
 - Documentación oficial de SQLite  
 
 ---
-<img src="WhatsApp Image 2025-08-04 at 15.06.38.jpeg" width="400">
+<img src="Clientes_más_valiosos.pdf" width="400"> <img src="Imagenes
+/Generos_USAB.pdf" width="400">
