@@ -129,4 +129,4 @@ A continuación, se proponen consultas SQL organizadas en distintos niveles de d
 - Documentación oficial de SQLite  
 
 ---
-<img src="imagenes_2/Clientes_más_valiosos.png" width="400">    <img src="imagenes_2/Generos_USAB.png" width="400">
+ <img src="imagenes_2/Generos_USAB.png" width="400"> <img src="imagenes_2/Clientes_más_valiosos.png" width="400">   
