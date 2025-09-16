@@ -80,6 +80,7 @@ Tabla puente (muchos-a-muchos) entre playlists y canciones.
 - **Ejemplo:** identificar qué playlists incluyen una canción.
 
 ---
+ <img src="imagenes_2/Preduccion_Ventas.png" width="400"> <img src="imagenes_2/Ventas_por_genero.png" width="400">
 
 ## 📝 Objetivos del Proyecto
 
@@ -127,5 +128,4 @@ A continuación, se proponen consultas SQL organizadas en distintos niveles de d
 - Documentación oficial de SQLite  
 
 ---
-<img src="imagenes_2/Clientes_más_valiosos.png" width="400"> 
-<img src="imagenes_2/Generos_USAB.png" width="400">
+<img src="imagenes_2/Clientes_más_valiosos.png" width="400">    <img src="imagenes_2/Generos_USAB.png" width="400">
