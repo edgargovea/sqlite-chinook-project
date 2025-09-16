@@ -4,7 +4,7 @@ Proyecto de práctica en SQLite usando la base de datos de ejemplo Chinook.
 Este repositorio contiene un proyecto de práctica en **SQLite** utilizando la base de datos de ejemplo **Chinook**.  
 El propósito es aprender a consultar, analizar y documentar datos de un sistema relacional mediante **consultas SQL** y, en algunos casos, integrarlo con **Python** para análisis adicional.  
 
-<img src="imagenes_2/Ventas_por_pais.png" width="400">
+<img src="imagenes_2/Ventas_por_pais.png" width="600">
 ---
 
 ## 🎯 Intención del Proyecto
