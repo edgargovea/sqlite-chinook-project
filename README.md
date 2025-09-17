@@ -16,7 +16,7 @@ El proyecto busca:
 3. Documentar las tablas y sus relaciones.  
 4. Resolver un conjunto de **objetivos/retos analíticos**.
    
-<img src="imagenes_2/Clientes_más.png" width="400"> 
+<img src="imagenes_2/Clientes_mas_valiosos2.png" width="400"> 
 ---
 
 ## 📂 Estructura de la Base de Datos Chinook
