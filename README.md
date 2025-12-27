@@ -4,7 +4,7 @@ Proyecto de práctica en SQLite usando la base de datos de ejemplo Chinook.
 Este repositorio contiene un proyecto de práctica en **SQLite** utilizando la base de datos de ejemplo **Chinook**.  
 El propósito es aprender a consultar, analizar y documentar datos de un sistema relacional mediante **consultas SQL** y, en algunos casos, integrarlo con **Python** para análisis adicional.  
 
-<img src="imagenes_2/Ventas_por_pais.png" width="600">
+<img src="figures/Ventas_por_pais.png" width="600">
 ---
 
 ## 🎯 Intención del Proyecto
@@ -16,7 +16,7 @@ El proyecto busca:
 3. Documentar las tablas y sus relaciones.  
 4. Resolver un conjunto de **objetivos/retos analíticos**.
    
-<img src="imagenes_2/Clientes_mas_valiosos2.png" width="400"> 
+<img src="figures/Clientes_mas_valiosos2.png" width="400"> 
 ---
 
 ## 📂 Estructura de la Base de Datos Chinook
@@ -82,7 +82,7 @@ Tabla puente (muchos-a-muchos) entre playlists y canciones.
 - **Ejemplo:** identificar qué playlists incluyen una canción.
 
 ---
- <img src="imagenes_2/Preduccion_Ventas.png" width="400"> <img src="imagenes_2/Ventas_por_genero.png" width="400">
+ <img src="figures/Preduccion_Ventas.png" width="400"> <img src="figures/Ventas_por_genero.png" width="400">
 
 ## 📝 Objetivos del Proyecto
 
@@ -130,4 +130,4 @@ A continuación, se proponen consultas SQL organizadas en distintos niveles de d
 - Documentación oficial de SQLite  
 
 ---
- <img src="imagenes_2/Generos_USAB.png" width="400">
+ <img src="figures/Generos_USAB.png" width="400">
