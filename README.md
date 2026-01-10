@@ -16,21 +16,20 @@ La base de datos **Chinook** modela una tienda de música digital. Incluye infor
 A continuación, se describen sus tablas principales:
 
 ## 📂 Chinook Database Structure
+| Table          | Description                                 | Primary Key   |
+| -------------- | ------------------------------------------- | ------------- |
+| employees      | Company employees and reporting structure   | EmployeeId    |
+| customers      | Customer profiles and assigned support reps | CustomerId    |
+| invoices       | Sales invoices issued to customers          | InvoiceId     |
+| invoice_items  | Line items for each invoice (tracks sold)   | InvoiceLineId |
+| artists        | Music artists catalog                       | ArtistId      |
+| albums         | Albums released by artists                  | AlbumId       |
+| tracks         | Individual music tracks                     | TrackId       |
+| genres         | Music genres                                | GenreId       |
+| media_types    | Audio file formats                          | MediaTypeId   |
+| playlists      | User-defined playlists                      | PlaylistId    |
+| playlist_track | Bridge table between playlists and tracks   | —             |
 
-
-| Table              | Description                                              | Primary Key   | Key Relationships                                                                             |
-| ------------------ | -------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------- |
-| **employees**      | Company employees and reporting structure                | EmployeeId    | ReportsTo → employees.EmployeeId                                                              |
-| **customers**      | Customer profiles and assigned support reps              | CustomerId    | SupportRepId → employees.EmployeeId                                                           |
-| **invoices**       | Sales invoices issued to customers                       | InvoiceId     | CustomerId → customers.CustomerId                                                             |
-| **invoice_items**  | Line items for each invoice (tracks sold)                | InvoiceLineId | InvoiceId → invoices.InvoiceId<br>TrackId → tracks.TrackId                                    |
-| **artists**        | Music artists catalog                                    | ArtistId      | —                                                                                             |
-| **albums**         | Albums released by artists                               | AlbumId       | ArtistId → artists.ArtistId                                                                   |
-| **tracks**         | Individual music tracks                                  | TrackId       | AlbumId → albums.AlbumId<br>GenreId → genres.GenreId<br>MediaTypeId → media_types.MediaTypeId |
-| **genres**         | Music genres                                             | GenreId       | —                                                                                             |
-| **media_types**    | Audio file formats                                       | MediaTypeId   | —                                                                                             |
-| **playlists**      | User-defined playlists                                   | PlaylistId    | —                                                                                             |
-| **playlist_track** | Bridge table (many-to-many) between playlists and tracks | —             | PlaylistId → playlists.PlaylistId<br>TrackId → tracks.TrackId                                 |
 
 
 #### 1. `employees`
