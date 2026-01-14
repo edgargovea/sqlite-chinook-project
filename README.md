@@ -1,6 +1,6 @@
-# Sales Analysis in a Relational Database (SQLite – Chinook)
+# Sales Analysis in a Relational Database (SQLite)
 
-Proyecto de análisis de la base de datos relacional Chinook, enfocado en la exploración, consulta y análisis de información de ventas, clientes y productos musicales.
+Proyecto de análisis de la base de datos relacional _Chinook_, enfocado en la exploración, consulta y análisis de información de ventas, clientes y productos musicales.
 
 Se diseñaron y ejecutaron consultas SQL de complejidad creciente (JOINs, subconsultas y CTEs) para responder preguntas de negocio como ingresos por país, clientes más valiosos, desempeño por género musical y tendencias temporales.
 
@@ -31,93 +31,54 @@ A continuación, se describen sus tablas principales:
 | playlist_track | Bridge table between playlists and tracks   | —             |
 
 
-
-#### 1. `employees`
-Información de los empleados de la compañía.  
-- **Claves:** `EmployeeId` (PK)  
-- **Campos:** nombre, cargo, jefe (`ReportsTo`), fecha de contratación, contacto, etc.  
-
-#### 2. `customers`
-Lista de clientes de la tienda.  
-- **Claves:** `CustomerId` (PK), `SupportRepId` (FK → `employees`)  
-
-#### 3. `invoices`
-Facturas emitidas a los clientes.  
-- **Claves:** `InvoiceId` (PK), `CustomerId` (FK → `customers`)  
-
-#### 4. `invoice_items`
-Detalle de las facturas (qué pistas se compraron).  
-- **Claves:** `InvoiceLineId` (PK), `InvoiceId` (FK), `TrackId` (FK)  
-
-#### 5. `artists`
-Catálogo de artistas musicales.  
-- **Claves:** `ArtistId` (PK)  
-
-#### 6. `albums`
-Listado de álbumes musicales.  
-- **Claves:** `AlbumId` (PK), `ArtistId` (FK)  
-
-#### 7. `tracks`
-Listado de canciones.  
-- **Claves:** `TrackId` (PK), `AlbumId` (FK), `MediaTypeId` (FK), `GenreId` (FK)  
-- **Campos:** título, compositor, duración, tamaño, precio.  
-
-#### 8. `genres`
-Catálogo de géneros musicales.  
-- **Claves:** `GenreId` (PK)  
-
-#### 9. `media_types`
-Tipos de formatos de audio.  
-- **Claves:** `MediaTypeId` (PK)  
-
-#### 10. `playlists`
-Playlists de la base de datos.  
-- **Claves:** `PlaylistId` (PK)  
-
-#### 11. `playlist_track`
-Tabla puente (muchos-a-muchos) entre playlists y canciones.  
-- **Claves:** `PlaylistId` (FK), `TrackId` (FK)  
-
 ---
- <img src="figures/Preduccion_Ventas.png" width="400"> <img src="figures/Ventas_por_genero.png" width="400">
+ <img src="figures/Preduccion_Ventas.png" width="270"> <img src="figures/Ventas_por_genero.png" width="270">
 
-## Objetivos del Proyecto  
-A continuación, se proponen consultas SQL organizadas en distintos niveles de dificultad.  
-### 🔹 Consultas básicas  
-- ¿Cuántos clientes hay en cada país?  
-- Lista los 10 artistas con más álbumes registrados.  
-- ¿Qué géneros tienen más canciones en la base de datos?  
-- ¿Qué empleados trabajan en cada ciudad y quién es su jefe?  
-### 🔹 Consultas intermedias (JOINs dobles o triples)  
-- ¿Cuáles son los clientes que más dinero han gastado en total?  
-- Lista los 5 clientes principales de cada país (Top 5 por país en gasto).  
-- ¿Qué artista tiene más canciones en la base de datos y cuántas?  
-- ¿Cuál es la canción más cara vendida (según el precio unitario en `InvoiceLine`)?  
-- ¿Qué empleados han generado más ingresos por ventas (sumando sus facturas asociadas)?  
-### 🔹 Consultas avanzadas (CTEs, subconsultas, agrupamientos)  
-- ¿Cuál es el género musical más vendido en cada país?  
-- ¿Cuál es el promedio de duración (en minutos) de las canciones por género?  
-- ¿Cuál es el ingreso total generado por cada artista?  
-- ¿Qué porcentaje de ventas representan los 3 artistas más vendidos respecto al total?  
-- Encuentra el mes con mayores ventas en toda la historia de la tienda.  
-- ¿Qué país tiene el mayor gasto promedio por cliente?  
+## Objetivos del Proyecto
 
-### 🔹 Business Questions Addressed    
-- Ranking de clientes: ¿Quiénes son los 10 más valiosos (*highest lifetime value*)?  
-- ¿Qué género prefieren los clientes de USA frente a los de Brasil?  
-- ¿Hay correlación entre duración de las canciones y su precio unitario?
-- Proyección de Crecimiento de Ventas
+El objetivo general de este proyecto es **analizar y extraer valor de la base de datos relacional Chinook** mediante consultas SQL y análisis complementario en Python, simulando escenarios reales de análisis de negocio.
 
-## Key Analyses & Visuals    
-- Sales by country
-- Top customers by total revenue
-- Revenue by genre and artist
-- Monthly sales trends
----
-##  Tools  
-- **SQLite** como motor de base de datos.  
-- **SQL** para consultas.  
-- **Python:** (sqlite3, pandas, Jupyter).  
+* Aplicar SQL y Python para explorar, consultar y analizar información de ventas, clientes y productos musicales, generando insights relevantes para la toma de decisiones.
+
+####  Exploración y comprensión de la base de datos
+
+* Comprender la **estructura relacional** de la base de datos Chinook.
+* Identificar entidades clave, relaciones entre tablas y campos relevantes.
+* Documentar el esquema y las tablas principales de forma clara y reproducible.
+
+####  Desarrollo de consultas SQL
+
+* Diseñar y ejecutar consultas SQL de **complejidad progresiva**:
+
+  * Consultas básicas (SELECT, WHERE, GROUP BY).
+  * Consultas intermedias con **JOINs múltiples**.
+  * Consultas avanzadas con **subconsultas y CTEs**.
+* Optimizar consultas para responder preguntas analíticas y de negocio.
+
+####  Análisis de negocio y generación de insights
+
+* Analizar métricas clave como:
+
+  * Ingresos por país, cliente, género y artista.
+  * Identificación de clientes más valiosos (*Customer Lifetime Value*).
+  * Desempeño de ventas por período de tiempo.
+* Responder preguntas de negocio reales basadas en datos.
+
+####  Análisis y visualización de datos
+
+* Integrar **SQLite con Python** para análisis adicional.
+* Utilizar **pandas y Jupyter Notebooks** para:
+
+  * Limpieza y transformación de datos.
+  * Visualización de resultados mediante gráficos claros e interpretables.
+  * Identificación de patrones y tendencias.
+
+#### Comunicación y reproducibilidad
+
+* Presentar los resultados de forma clara mediante:
+  * Notebooks bien documentados.
+  * Visualizaciones de resultados.
+
 ---
 ## 📌 Referencias  
 - [SQLite Tutorial - Sample Database](https://www.sqlitetutorial.net/sqlite-sample-database/)  
