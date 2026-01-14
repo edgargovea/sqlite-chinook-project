@@ -10,12 +10,12 @@ El proyecto integra SQLite, SQL y Python (pandas, Jupyter) para análisis adicio
 
 ---
 
-## 📂 Estructura de la Base de Datos Chinook
+##  Estructura de la Base de Datos Chinook
 
 La base de datos **Chinook** modela una tienda de música digital. Incluye información sobre artistas, álbumes, géneros, clientes, facturas y más.  
 A continuación, se describen sus tablas principales:
 
-## 📂 Chinook Database Structure
+##  Chinook Database Structure
 | Table          | Description                                 | Primary Key   |
 | -------------- | ------------------------------------------- | ------------- |
 | employees      | Company employees and reporting structure   | EmployeeId    |
@@ -92,7 +92,7 @@ Tabla puente (muchos-a-muchos) entre playlists y canciones.
 ---
  <img src="figures/Preduccion_Ventas.png" width="400"> <img src="figures/Ventas_por_genero.png" width="400">
 
-## 📝 Objetivos del Proyecto  
+## Objetivos del Proyecto  
 A continuación, se proponen consultas SQL organizadas en distintos niveles de dificultad.  
 ### 🔹 Consultas básicas  
 - ¿Cuántos clientes hay en cada país?  
