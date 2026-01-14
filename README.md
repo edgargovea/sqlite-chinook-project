@@ -36,58 +36,47 @@ A continuación, se describen sus tablas principales:
 Información de los empleados de la compañía.  
 - **Claves:** `EmployeeId` (PK)  
 - **Campos:** nombre, cargo, jefe (`ReportsTo`), fecha de contratación, contacto, etc.  
-- **Ejemplo:** saber qué empleados reportan a un gerente.
 
 #### 2. `customers`
 Lista de clientes de la tienda.  
 - **Claves:** `CustomerId` (PK), `SupportRepId` (FK → `employees`)  
-- **Ejemplo:** clientes asignados a un representante de soporte.
 
 #### 3. `invoices`
 Facturas emitidas a los clientes.  
 - **Claves:** `InvoiceId` (PK), `CustomerId` (FK → `customers`)  
-- **Ejemplo:** compras realizadas por cada cliente.
 
 #### 4. `invoice_items`
 Detalle de las facturas (qué pistas se compraron).  
 - **Claves:** `InvoiceLineId` (PK), `InvoiceId` (FK), `TrackId` (FK)  
-- **Ejemplo:** conocer qué canciones componen cada factura.
 
 #### 5. `artists`
 Catálogo de artistas musicales.  
 - **Claves:** `ArtistId` (PK)  
-- **Ejemplo:** artista con más álbumes publicados.
 
 #### 6. `albums`
 Listado de álbumes musicales.  
 - **Claves:** `AlbumId` (PK), `ArtistId` (FK)  
-- **Ejemplo:** obtener todos los álbumes de un artista.
 
 #### 7. `tracks`
 Listado de canciones.  
 - **Claves:** `TrackId` (PK), `AlbumId` (FK), `MediaTypeId` (FK), `GenreId` (FK)  
 - **Campos:** título, compositor, duración, tamaño, precio.  
-- **Ejemplo:** duración promedio de canciones por género.
 
 #### 8. `genres`
 Catálogo de géneros musicales.  
 - **Claves:** `GenreId` (PK)  
-- **Ejemplo:** género con mayor número de canciones.
 
 #### 9. `media_types`
 Tipos de formatos de audio.  
 - **Claves:** `MediaTypeId` (PK)  
-- **Ejemplo:** canciones por tipo de archivo.
 
 #### 10. `playlists`
 Playlists de la base de datos.  
 - **Claves:** `PlaylistId` (PK)  
-- **Ejemplo:** listar las canciones de una playlist.
 
 #### 11. `playlist_track`
 Tabla puente (muchos-a-muchos) entre playlists y canciones.  
 - **Claves:** `PlaylistId` (FK), `TrackId` (FK)  
-- **Ejemplo:** identificar qué playlists incluyen una canción.
 
 ---
  <img src="figures/Preduccion_Ventas.png" width="400"> <img src="figures/Ventas_por_genero.png" width="400">
